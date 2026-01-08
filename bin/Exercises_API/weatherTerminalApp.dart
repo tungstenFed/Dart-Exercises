@@ -13,7 +13,7 @@ void main(List<String> Arguments) async //async to be able to use await for the 
   String? cityName = stdin.readLineSync();
   if(cityName == null){print("Error");  exit(1);}
 
-  String apiKey = "c698ed75b4864dab853406459a02809f"; //api key openweathermap.org
+  String apiKey = "APIKEY"; //api key openweathermap.org
   String url = "https://api.openweathermap.org/data/2.5/weather?q=${Uri.encodeComponent(cityName)}&appid=${apiKey}&units=metric"; //build the url. encodecomponent avoids https errorrs (New York -> New%20York), url format
   //available on openweathermap.org, current weather api.
   
