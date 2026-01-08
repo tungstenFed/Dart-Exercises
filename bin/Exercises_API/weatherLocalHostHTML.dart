@@ -155,7 +155,7 @@ void main(List<String> arguments) async //async to be able to use await for the 
       print("Please insert your city (\"quit\" to quit):");
       city = stdin.readLineSync();
 
-      String apiKey = "c698ed75b4864dab853406459a02809f";
+      String apiKey = "MYAPIKEY";
       globalCity = city.toString();
       String url = "https://api.openweathermap.org/data/2.5/weather?q=${Uri.encodeComponent(globalCity)}&appid=${apiKey}&units=metric";
 
